@@ -17,9 +17,7 @@ $('#close').sidr({
 
 //CURRENT LOCATION
 
-navigator.geolocation.getCurrentPosition( 
-  
-  function(position) {
+navigator.geolocation.getCurrentPosition(function(position) {
   
   // wait a few seconds to receive location
   var lat = position.coords.latitude;
