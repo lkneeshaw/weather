@@ -39,3 +39,54 @@ i {
 .stormy {
     background: #454545;
 }
+
+//SIDR
+
+$sidebar-width: 16em;
+$sidebar-width-neg: -16em;
+
+.sidr {
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+    width: $sidebar-width;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &.left {
+        left: $sidebar-width-neg;
+        right: auto;
+    }
+}
+
+#sidr-show-hide {
+    position: absolute;
+    z-index: 100;
+    left: 1em;
+    top: 1em;
+}
+
+// Sections
+div {
+  width: 100%;
+  position: absolute;
+ 
+}
+#current-location {
+  background: #b5b5b5;
+  z-index: 1;
+}
+
+#seattle {
+  background: green;
+}
+
+#phoenix {
+  background: blue;
+}
+
+:target {
+  z-index: 2;
+}
