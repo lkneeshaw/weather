@@ -111,25 +111,38 @@ $.simpleWeather({
       // https://developer.yahoo.com/weather/documentation.html#codes
       console.log(weather.code);
       
-      // If Sunny `code` between 31 and 36       
-      if (weather.code >= 31 && weather.code <= 36 ) {
+      // If Sunny       
+      if (weather.code >= 31 && weather.code <= 34 || weather.code == 36 || weather.code == 44 ) {
         
-        $('body').addClass('sunny');
+        $('#current-location').addClass('sunny');
         
       }
       
-       // If Cloudy `code` between 31 and 36       
+       // If Cloudy       
       if (weather.code >= 26 && weather.code <= 30 ) {
         
-        $('body').addClass('cloudy');
+        $('#current-location').addClass('cloudy');
         
       }
       
-      // If Rainy `code` between 31 and 36       
-      if (weather.code >= 5 && weather.code <= 14 ) {
+      // If Rainy       
+      if (weather.code >= 5 && weather.code <= 12 ) {
         
-        $('body').addClass('rainy');
+        $('#current-location').addClass('rainy');
           
+      }
+        
+      // If Snowy
+      if (weather.code >= 13 && weather.code <= 18 || weather.code == 25 || weather.code >= 41 && weather.code <= 43 || weather.code == 46) {
+          
+        $('#current-location').addClass('snowy')
+          
+      }
+        
+      // If Storming
+      if (weather.code >= 0 && weather.code <= 5 || weather.code >= 37 && weather.code <= 39 || weather.code == 45 || weather.code == 47) {
+          
+          $('#current-location').addClass('stormy')
       }
       
     },
@@ -224,25 +237,38 @@ $.simpleWeather({
       // https://developer.yahoo.com/weather/documentation.html#codes
       console.log(weather.code);
       
-      // If Sunny `code` between 31 and 36       
-      if (weather.code >= 31 && weather.code <= 36 ) {
+      // If Sunny       
+      if (weather.code >= 31 && weather.code <= 34 || weather.code == 36 || weather.code == 44 ) {
         
         $('#seattle').addClass('sunny');
         
       }
       
-       // If Cloudy `code` between 31 and 36       
+       // If Cloudy       
       if (weather.code >= 26 && weather.code <= 30 ) {
         
         $('#seattle').addClass('cloudy');
         
       }
       
-      // If Rainy `code` between 31 and 36       
-      if (weather.code >= 5 && weather.code <= 14 ) {
+      // If Rainy       
+      if (weather.code >= 5 && weather.code <= 12 ) {
         
         $('#seattle').addClass('rainy');
           
+      }
+        
+      // If Snowy
+      if (weather.code >= 13 && weather.code <= 18 || weather.code == 25 || weather.code >= 41 && weather.code <= 43 || weather.code == 46) {
+          
+        $('#seattle').addClass('snowy')
+          
+      }
+        
+      // If Storming
+      if (weather.code >= 0 && weather.code <= 5 || weather.code >= 37 && weather.code <= 39 || weather.code == 45 || weather.code == 47) {
+          
+          $('#seattle').addClass('stormy')
       }
       
     },
@@ -335,25 +361,38 @@ $.simpleWeather({
       // https://developer.yahoo.com/weather/documentation.html#codes
       console.log(weather.code);
       
-      // If Sunny `code` between 31 and 36       
-      if (weather.code >= 31 && weather.code <= 36 ) {
+      // If Sunny       
+      if (weather.code >= 31 && weather.code <= 34 || weather.code == 36 || weather.code == 44 ) {
         
         $('#phoenix').addClass('sunny');
         
       }
       
-       // If Cloudy `code` between 31 and 36       
+       // If Cloudy       
       if (weather.code >= 26 && weather.code <= 30 ) {
         
         $('#phoenix').addClass('cloudy');
         
       }
       
-      // If Rainy `code` between 31 and 36       
-      if (weather.code >= 5 && weather.code <= 14 ) {
+      // If Rainy       
+      if (weather.code >= 5 && weather.code <= 12 ) {
         
         $('#phoenix').addClass('rainy');
           
+      }
+        
+      // If Snowy
+      if (weather.code >= 13 && weather.code <= 18 || weather.code == 25 || weather.code >= 41 && weather.code <= 43 || weather.code == 46) {
+          
+        $('#phoenix').addClass('snowy')
+          
+      }
+        
+      // If Storming
+      if (weather.code >= 0 && weather.code <= 5 || weather.code >= 37 && weather.code <= 39 || weather.code == 45 || weather.code == 47) {
+          
+          $('#phoenix').addClass('stormy')
       }
       
     },

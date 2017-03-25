@@ -4,19 +4,25 @@ YOUR STYLES
 
 body {
     background: #54ab5e;
+    color: white;
     text-align: center;
 }
 
-.city {
-  color: red;
-}
+//.city {
+//  color: red;
+//}
+//
+//.state {
+//  color: darkgreen;
+//}
+//
+//.temp {
+//  color: blue;
+//}
 
-.state {
-  color: darkgreen;
-}
-
-.temp {
-  color: blue;
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
 }
 
 i {
@@ -24,40 +30,50 @@ i {
 }
 
 .forecast {
+    background: #2f2f2f;
     display: flex;
     justify-content: center;
     flex-flow: wrap row;
+    
+    figure {
+        border-right: 1px solid white;
+        margin: 0;
+        padding: 0 1.5em;
+    }
+    
+    figure:last-child {
+        border-right: none;
+    }
 }
 
 .today {
     padding-bottom: 100px;
     
     .location {
+        background: #2f2f2f;
         font-size: 1.5em;
-        padding-top: 20px
+        margin: 0 0 5em 0;
+        padding: 1em
     }
     
     i {
-        font-size: 20em;
-        color: blue;
-    } 
+        font-size: 23em;
+        line-height: .5em;
+    }
+    
+    .temp {
+        font-size: 3em;
+        padding: 0 .25em 0 .5em;
+    }
+    
+    .high {
+        opacity: .9;
+    }
+    
+    .low {
+        opacity: .9;
+    }
 
-}
-
-.sunny {
-  background: yellow;
-}
-
-.cloudy {
-  background: gray;
-}
-
-.rainy {
-  background: blue;
-}
-
-.stormy {
-    background: #454545;
 }
 
 //SIDR
@@ -66,6 +82,8 @@ $sidebar-width: 16em;
 $sidebar-width-neg: -16em;
 
 .sidr {
+    background: #2f2f2f;
+    border-right: 3px solid white;
     display: block;
     position: fixed;
     top: 0;
@@ -95,18 +113,43 @@ section {
  
 }
 #current-location {
-  background: #b5b5b5;
   z-index: 1;
 }
 
-#seattle {
-  background: green;
-}
-
-#phoenix {
-  background: blue;
+ul {
+    border-top: 1px solid white;
+    padding: 0;
+    
+    li {
+       list-style: none;
+       border-bottom: 1px solid white;
+        padding: 10px;
+        
+    }
 }
 
 :target {
   z-index: 2;
+}
+
+// Conditionals
+
+.sunny {
+  background: yellow;
+}
+
+.cloudy {
+  background: gray;
+}
+
+.rainy {
+  background: blue;
+}
+
+.snowy {
+    background: lightgray;
+}
+
+.stormy {
+    background: #454545;
 }
