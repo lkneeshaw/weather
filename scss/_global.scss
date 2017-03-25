@@ -135,11 +135,12 @@ ul {
 // Conditionals
 
 .sunny {
-  background: yellow;
+  background: #ffce00;
+  background-image: linear-gradient(#ff8000, yellow);
 }
 
 .cloudy {
-  background: gray;
+  background: #ffce00;
 }
 
 .rainy {
