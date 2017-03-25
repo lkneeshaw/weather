@@ -4,6 +4,7 @@ YOUR STYLES
 
 body {
     background: #54ab5e;
+    text-align: center;
 }
 
 .city {
@@ -20,8 +21,27 @@ body {
 
 i {
   font-size: 24em;
-  color: red;
-  text-shadow: 0 0 20px #000;
+}
+
+.forecast {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap row;
+}
+
+.today {
+    padding-bottom: 100px;
+    
+    .location {
+        font-size: 1.5em;
+        padding-top: 20px
+    }
+    
+    i {
+        font-size: 20em;
+        color: blue;
+    } 
+
 }
 
 .sunny {
@@ -64,8 +84,8 @@ $sidebar-width-neg: -16em;
 #sidr-show-hide {
     position: absolute;
     z-index: 100;
-    left: 1em;
-    top: 1em;
+    left: 3em;
+    top: 3em;
 }
 
 // Sections
