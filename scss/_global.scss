@@ -3,7 +3,7 @@ YOUR STYLES
 *******************/
 
 body {
-    background: #54ab5e;
+    background: #2f2f2f;
     color: white;
     text-align: center;
 }
@@ -103,7 +103,13 @@ $sidebar-width-neg: -16em;
     position: absolute;
     z-index: 100;
     left: 3em;
-    top: 3em;
+    top: 1em;
+}
+
+#close {
+    display: block;
+    font-size: 2em;
+    margin: 1.5em 0;
 }
 
 // Sections

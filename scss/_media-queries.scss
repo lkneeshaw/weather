@@ -2,13 +2,35 @@
 MEDIA QUERIES
 *******************/
 /* Mobile: 320px = 20em */
-@media screen and (min-width: 20em) { 
+@media screen and (max-width: 48em) { 
 
-//  /* Diagnostic Styling. Delete When Done. */
-//  body:before {
-//       background: yellow;
-//       content: "Mobile Size";
-  }
+    .today {
+        font-size: .9em;
+        padding-bottom: 6em;
+        
+        location {
+            margin: 0 0 3em 0;
+        }
+        
+        i {
+            font-size: 30em;
+            line-height: .2em;
+        }
+    }
+    
+    .forecast {
+        font-size: .5em;
+        
+        i {
+            font-size: 5em;
+        }
+    }
+    
+    #sidr-show-hide {
+        font-size: 1.5em;
+        left: 1.5em;
+        top: .85em;
+    }
   
 }
 
@@ -19,7 +41,7 @@ MEDIA QUERIES
 //  body:before {
 //       background: yellow;
 //       content: "Tablet Size";
-  }
+//  }
 
 }
 
@@ -30,6 +52,6 @@ MEDIA QUERIES
 //  body:before {
 //       background: yellow;
 //       content: "Desktop Size";
-  }
+//  }
 
 }
