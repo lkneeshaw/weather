@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+
 @font-face {
     font-family: 'weather';
     src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/16425/artill_clean_icons-webfont.eot');
@@ -7,6 +10,10 @@
          url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/16425/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+
+body {
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 i {
