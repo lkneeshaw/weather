@@ -125,31 +125,36 @@ $.simpleWeather({
       }
       
        // If Cloudy       
-      if (weather.code >= 26 && weather.code <= 30 ) {
+      else if (weather.code >= 26 && weather.code <= 30 ) {
         
         $('#current-location').addClass('cloudy');
         
       }
       
       // If Rainy       
-      if (weather.code >= 5 && weather.code <= 12 ) {
+      else if (weather.code >= 5 && weather.code <= 12 ) {
         
         $('#current-location').addClass('rainy');
           
       }
         
       // If Snowy
-      if (weather.code >= 13 && weather.code <= 18 || weather.code == 25 || weather.code >= 41 && weather.code <= 43 || weather.code == 46) {
+      else if (weather.code >= 13 && weather.code <= 18 || weather.code == 25 || weather.code >= 41 && weather.code <= 43 || weather.code == 46) {
           
         $('#current-location').addClass('snowy')
           
       }
         
       // If Storming
-      if (weather.code >= 0 && weather.code <= 5 || weather.code >= 37 && weather.code <= 39 || weather.code == 45 || weather.code == 47) {
+      else if (weather.code >= 0 && weather.code <= 5 || weather.code >= 37 && weather.code <= 39 || weather.code == 45 || weather.code == 47) {
           
           $('#current-location').addClass('stormy')
       }
+        
+        // If none of the above
+        else {
+            $('#current-location').addClass('sunny');
+        }
       
     },
     error: function(error) {
@@ -251,31 +256,36 @@ $.simpleWeather({
       }
       
        // If Cloudy       
-      if (weather.code >= 26 && weather.code <= 30 ) {
+      else if (weather.code >= 26 && weather.code <= 30 ) {
         
         $('#seattle').addClass('cloudy');
         
       }
       
       // If Rainy       
-      if (weather.code >= 5 && weather.code <= 12 ) {
+      else if (weather.code >= 5 && weather.code <= 12 ) {
         
         $('#seattle').addClass('rainy');
           
       }
         
       // If Snowy
-      if (weather.code >= 13 && weather.code <= 18 || weather.code == 25 || weather.code >= 41 && weather.code <= 43 || weather.code == 46) {
+      else if (weather.code >= 13 && weather.code <= 18 || weather.code == 25 || weather.code >= 41 && weather.code <= 43 || weather.code == 46) {
           
         $('#seattle').addClass('snowy')
           
       }
         
       // If Storming
-      if (weather.code >= 0 && weather.code <= 5 || weather.code >= 37 && weather.code <= 39 || weather.code == 45 || weather.code == 47) {
+      else if (weather.code >= 0 && weather.code <= 5 || weather.code >= 37 && weather.code <= 39 || weather.code == 45 || weather.code == 47) {
           
           $('#seattle').addClass('stormy')
       }
+        
+        // If none of the above
+        else {
+          $('#seattle').addClass('sunny')  
+        }
       
     },
     error: function(error) {
@@ -375,31 +385,36 @@ $.simpleWeather({
       }
       
        // If Cloudy       
-      if (weather.code >= 26 && weather.code <= 30 ) {
+      else if (weather.code >= 26 && weather.code <= 30 ) {
         
         $('#phoenix').addClass('cloudy');
         
       }
       
       // If Rainy       
-      if (weather.code >= 5 && weather.code <= 12 ) {
+      else if (weather.code >= 5 && weather.code <= 12 ) {
         
         $('#phoenix').addClass('rainy');
           
       }
         
       // If Snowy
-      if (weather.code >= 13 && weather.code <= 18 || weather.code == 25 || weather.code >= 41 && weather.code <= 43 || weather.code == 46) {
+      else if (weather.code >= 13 && weather.code <= 18 || weather.code == 25 || weather.code >= 41 && weather.code <= 43 || weather.code == 46) {
           
         $('#phoenix').addClass('snowy')
           
       }
         
       // If Storming
-      if (weather.code >= 0 && weather.code <= 5 || weather.code >= 37 && weather.code <= 39 || weather.code == 45 || weather.code == 47) {
+      else if (weather.code >= 0 && weather.code <= 5 || weather.code >= 37 && weather.code <= 39 || weather.code == 45 || weather.code == 47) {
           
           $('#phoenix').addClass('stormy')
       }
+        
+        // If none of the above
+        else {
+            $('#phoenix').addClass('sunny');
+        }
       
     },
     error: function(error) {
