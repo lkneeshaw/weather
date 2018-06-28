@@ -17,6 +17,9 @@ $('#close').sidr({
 
 //CURRENT LOCATION
 
+$('#current-location .today').hide();
+$('#current-location .forecast').hide();
+
 navigator.geolocation.getCurrentPosition(function(position) {
   
   // wait a few seconds to receive location
@@ -37,6 +40,9 @@ $.simpleWeather({
     success: function(weather) {
       // Entire weather object
       console.log(weather);
+      $('#current-location .today').show();
+      $('#current-location .forecast').show();
+      $('#current-location #no-location').hide();
       
       // Display Data
       $('#current-location .city').text(weather.city);
@@ -47,7 +53,7 @@ $.simpleWeather({
       $('#current-location .high').text(weather.high + '°');
       $('#current-location .low').text(weather.low + '°');
         
-//    2Display Data : Day 1
+    // Display Data : Day 1
     $('#current-location .forecast figure:nth-child(1) .next-day').text(weather.forecast[1].day);
     $('#current-location .forecast figure:nth-child(1) .low').text(weather.forecast[1].low);
     $('#current-location .forecast figure:nth-child(1) .high').text(weather.forecast[1].high);
